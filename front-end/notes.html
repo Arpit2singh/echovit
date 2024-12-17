@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Sharing Platform</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Notes Sharing Platform</h1>
+        </div>
+    </header>
+
+    <!-- Animation at the Top -->
+    <div class="top-animation-container">
+        <div id="top-animation"></div>
+    </div>
+
+    <main>
+        <section class="notes-container">
+            <div class="note-item">
+                <h3>Matrix Notes</h3>
+                <p>Topic: Types, Operations & Properties, Determinants</p>
+                <button class="download-btn">Download</button>
+            </div>
+            <div class="note-item">
+                <h3>Determinants</h3>
+                <p>Topic: Properties, Inverse, and Adjoint</p>
+                <button class="download-btn">Download</button>
+            </div>
+            <div class="note-item">
+                <h3>Matrix Inverse</h3>
+                <p>Topic: Reverse Law and Simultaneous Equations</p>
+                <button class="download-btn">Download</button>
+            </div>
+        </section>
+
+        <section class="upload-container">
+            <h2>Upload Your Notes</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx" />
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Notes Sharing Platform</p>
+    </footer>
+
+    <!-- Lottie Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <script src="notes.js"></script>
+</body>
+</html>

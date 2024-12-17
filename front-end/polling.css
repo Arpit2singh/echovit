@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f39c12, #ffffff, #3498db);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    border: 3px solid #f39c12;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #f39c12;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #f39c12;
+    color: #fff;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f39c12;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Add Poll Section */
+.add-poll {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #3498db;
+}
+
+/* Flexbox alignment for inputs inside Add Your Poll box */
+#optionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between inputs */
+    align-items: center; /* Align vertically */
+}
+
+/* Adjust size for inputs to fit in one line */
+.input-field {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(240, 240, 240, 1);
+    color: #333;
+    font-size: 14px; /* Smaller font */
+    flex: 1; /* Distributes space evenly between inputs */
+    min-width: 150px; /* Minimum width for smaller screens */
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+/* Buttons in Add Your Poll */
+.add-poll button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-poll button:hover {
+    background: #1f78b4;
+    transform: scale(1.05);
+}
+
+/* Existing Polls Section */
+.polls {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #3498db;
+}
+
+.poll {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(245, 245, 245, 1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.poll h3 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.poll-options {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.poll-options button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(240, 240, 240, 1);
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.poll-options button:hover {
+    background: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.poll-result {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}

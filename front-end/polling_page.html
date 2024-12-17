@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EchoVIT Polling Page</title>
+    <link rel="stylesheet" href="./polling.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>EchoVIT</h1>
+        <div class="nav-links">
+          <a href="./project1.html.html">Home</a>
+        </div>
+      </div>
+      <!-- Title -->
+      <div class="title">My Poll</div>
+      <!-- Poll Section -->
+      <div class="poll-section">
+        <!-- Add Poll -->
+        <div class="add-poll">
+          <h3>Add Your Poll</h3>
+          <input
+            type="text"
+            id="pollQuestion"
+            placeholder="Enter your poll question"
+            class="input-field"
+          />
+          <div id="optionsContainer">
+            <input
+              type="text"
+              class="input-field poll-option"
+              placeholder="Option 1"
+            />
+            <input
+              type="text"
+              class="input-field poll-option"
+              placeholder="Option 2"
+            />
+          </div>
+          <button id="addOptionButton">+ Add Option</button>
+          <button id="addPollButton">+ Add Poll</button>
+        </div>
+        <!-- Existing Polls -->
+        <div class="polls" id="pollsContainer">
+          <h3>Existing Polls</h3>
+          <!-- Polls will be dynamically added here -->
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">© 2024 EchoVIT. All Rights Reserved.</div>
+    </div>
+    <script src="polling.js"></script>
+  </body>
+</html>

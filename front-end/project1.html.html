@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EchoVIT - Empowering Student Voices</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="echoVIT Chatbot"
+      agent-id="your-agent-id"
+      language-code="en"
+    ></df-messenger>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h2>EchoVIT</h2>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#contact-us">Feedback</a></li>
+          <li>
+            <a href="./polling_page.html">Pollway</a>
+          </li>
+
+          <li><a href="./calender.html">Calendar</a></li>
+          <li><a href="https://echovit-help.vercel.app/" target="blank">Chat-bot</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1 class="hero-title">EchoVIT</h1>
+      <p class="hero-subtitle">
+        Empowering student voices with ease of communication
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-bullhorn"></i>
+          <a href="#contact-us"
+            ><h3 style="color: aliceblue; text-decoration: underline;" >Express Freely</h3></a
+          >
+          <p>
+            Share your feedback with the administration and bring positive
+            change.
+          </p>
+        </div>
+
+        <div class="feature"><a style="text-decoration: none; color: whitesmoke;" href="./hostrike.html" target="_blank">
+          <i class="fas fa-chart-line"></i>
+          <h3>HOSTRIKE</h3>
+          <p>GET REPORT YOUR PROBLEM IN ONE CLICK.</p></a>
+        </div>
+
+        <div class="feature"><a style="text-decoration: none; color: whitesmoke;" href="./notes.html" target="_blank" >
+          <i class="fas fa-book-reader"></i>
+          <h3>Accessible Resources</h3>
+          <p>Access notes, question papers, and study materials easily.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>
+        EchoVIT is a platform designed to enhance communication between students
+        and the university administration. Our system provides real-time
+        feedback, poll-based voting mechanisms, issue reporting, and access to
+        study resources. EchoVIT strives to create a transparent, efficient, and
+        user-friendly experience for both students and university staff.
+      </p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+
+      <div class="testimonial">
+        <p>
+          "EchoVIT has been a game-changer for communication. It made it easy
+          for me to share my concerns directly with the administration. I no
+          longer have to wait weeks for a response!"
+        </p>
+        <h4>- Arjun Nair</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          "The poll system is my favorite! It’s so easy to vote on university
+          decisions and see what other students think. EchoVIT truly represents
+          our voices."
+        </p>
+        <h4>- Priya Sharma</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          "The real-time reporting feature has made issue tracking so much
+          easier. I get updates on every stage of the resolution process."
+        </p>
+        <h4>- Sandeep Patel</h4>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us" id="contact-us">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-about">
+          <h3>About EchoVIT</h3>
+          <p>
+            EchoVIT is a student-driven platform aimed at enhancing
+            communication between students and university administration. We
+            believe in empowering students by providing tools for effective
+            communication and feedback.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Pollway</a></li>
+            <li><a href="#">Live</a></li>
+            <li><a href="#">Feelings</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 EchoVIT. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

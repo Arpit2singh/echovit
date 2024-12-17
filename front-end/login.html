@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EchoVIT - Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Title Section -->
+      <div class="title-section">
+        <h1>EchoVIT</h1>
+      </div>
+
+      <!-- Middle Box -->
+      <div class="middle-box">
+        <!-- Welcome Section -->
+        <div class="welcome-section switch">
+          <h1>Welcome Back</h1>
+          <p>Enter your credentials to log in and access your account.</p>
+        </div>
+
+        <!-- Clerk Login Section -->
+        <div id="clerk-login"></div>
+      </div>
+
+      <!-- Orbiting Links -->
+      <div class="orbit-container">
+        <div class="orbit-path"></div>
+        <a href="#" class="orbit-link">Home</a>
+        <a href="#" class="orbit-link">Sign Up</a>
+        <a href="#" class="orbit-link">VTOP</a>
+        <a href="#" class="orbit-link">My Voice</a>
+        <a href="#" class="orbit-link">My AI</a>
+        <a href="#" class="orbit-link">My Notes</a>
+        <a href="#" class="orbit-link">Feedback</a>
+        <a href="#" class="orbit-link">Hostrike</a>
+      </div>
+    </div>
+
+    <!-- Lock Icons -->
+    <div class="lock left-lock">
+      <i class="fas fa-lock"></i>
+    </div>
+    <div class="lock right-lock">
+      <i class="fas fa-lock"></i>
+    </div>
+
+    <!-- Clerk Integration -->
+    <script
+    async
+    crossorigin="anonymous"
+    data-clerk-publishable-key="pk_test_c3RpcnJlZC1tYWdwaWUtNTMuY2xlcmsuYWNjb3VudHMuZGV2JA"
+    src="https://stirred-magpie-53.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+    type="text/javascript">
+  </script>
+
+  <script>
+    window.addEventListener("load", () => {
+      Clerk.load().then(() => {
+        Clerk.mountSignIn(document.getElementById("clerk-login"));
+      });
+    });
+  </script> 
+
+
+    <script
+    async
+    crossorigin="anonymous"
+    data-clerk-publishable-key="pk_test_c3RpcnJlZC1tYWdwaWUtNTMuY2xlcmsuYWNjb3VudHMuZGV2JA"
+    src="https://stirred-magpie-53.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+    type="text/javascript">
+  </script>
+  
+  <script>
+    window.addEventListener("load", () => {
+      Clerk.load().then(() => {
+        // Mount the Clerk sign-in form
+        Clerk.mountSignIn(document.getElementById("clerk-login"), {
+          afterSignInUrl: "project1.html.html", // Redirect after successful sign-in
+          afterSignUpUrl: "project1.html.html" // Redirect after successful sign-up
+        });
+      });
+    });
+  </script>
+  

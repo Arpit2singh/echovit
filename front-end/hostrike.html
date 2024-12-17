@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostrike Email Options</title>
+    <link rel="stylesheet" href="hostrike.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <h1 style="color: rgb(241, 21, 21);"><strong>HOSTRIKE</strong></h1>
+    <h3 id="animated-heading"></h3>
+
+    <ul>
+        <li>
+            <span>Holiday Request</span>
+            <button class="hostrike-btn" onclick="sendMail('proctor@example.com', 'Holiday Request', `Name:- 
+Register Number:- 
+Mobile Number of student:- 
+Block number:- 
+Name of hostel warden:- 
+Date and time of departure :- 
+Date and time of arrival :- 
+Fathers Name :- 
+Mobile no. of father :-
+Address :- 
+`)">
+  Send Mail
+</button>
+
+        </li>
+        <li>
+            <span>Outing Permission</span>
+            <button class="hostrike-btn" onclick="sendMail('proctor@example.com', 'Holiday Request', `Name:- 
+            Register Number:- 
+            Mobile Number of student:- 
+            Block number:- 
+            Name of hostel warden:- 
+            Date and time of departure :- 
+            Date and time of arrival :- 
+            Fathers Name :- 
+            Mobile no. of father :-
+            Address :- 
+            `)">
+              Send Mail
+            </button>
+            
+        </li>
+        <li>
+            <span>Food Feedback</span>
+            <button class="hostrike-btn" onclick="sendMail('warden@example.com', 'Food Feedback', 'Here is my feedback regarding the food service.')">Send Mail</button>
+        </li>
+        <li>
+            <span>Room Service Issue</span>
+            <button class="hostrike-btn" onclick="sendMail('warden@example.com', 'Room Service Issue', 'I am facing issues with room service. Please address the following [details]')">Send Mail</button>
+        </li>
+        <li>
+            <span>Wi-Fi/Network Issue</span>
+            <button class="hostrike-btn" onclick="sendMail('cts@example.com', 'Network Issue', `RESPECTED SIR,
+
+I hope this message finds you well. I am writing to report an issue with the Wi-Fi connectivity in Hostel Block 1, Room 440A. The signal strength is consistently low, leading to reduced internet speed and frequent interruptions in online activities. Additionally, 439A in the nearby room are facing the same issue. Below is the list of names:
+`)">
+  Send Mail
+</button>
+
+        <li>
+            <span>Attendance Issue</span>
+            <button class="hostrike-btn" onclick="sendMail('teacher@example.com', 'Attendance Correction', 'I have an issue regarding my attendance in [Subject]. Please check.')">Send Mail</button>
+        </li>
+        <li>
+            <span>Maintenance Request</span>
+            <button class="hostrike-btn" onclick="sendMail('maintenance@example.com', 'Maintenance Request', 'I am reporting an issue with [Issue Description]. Please resolve it soon.')">Send Mail</button>
+        </li>
+        <li>
+            <span>General Query</span>
+            <button class="hostrike-btn" onclick="sendMail('admin@example.com', 'General Query', 'I have a query regarding [Topic].')">Send Mail</button>
+        </li>
+    </ul>
+    <script src="hostrike.js"></script> <!-- Link to JS file -->
+</body>
+</html>

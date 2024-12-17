@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #00509e; 
+    background: linear-gradient(to right, #ffffff, #1f78d1, #ff6600);
+    position: relative;
+}
+
+
+.title-section {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Glassmorphism Middle Box */
+.middle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Box size */
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+/* Switchable Sections */
+.switch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.switch-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1f78d1, #ff6600);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 90%; /* Keeps the box inside the glassmorphism middle-box */
+    padding: 20px;
+    background: #ffffff; /* Solid background */
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Border for better visibility */
+    text-align: center;
+    color: #00509e;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #00509e;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Remember Me */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 5px;
+    font-size: 1rem;
+    color: #00509e;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1f78d1, #ff6600);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hidden Section */
+.hidden {
+    transform: translateX(100%);
+}
+
+.switch:not(.hidden) {
+    transform: translateX(0);
+}
+
+/* Orbiting Links */
+.orbit-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;  /* Increased orbit container size for a bigger path */
+    height: 1200px; /* Increased orbit container size for a bigger path */
+    animation: rotate-orbit 15s linear infinite;  /* Slower animation for a bigger orbit */
+    z-index: 1; /* Ensures it's behind the links and middle box */
+}
+
+.orbit-link {
+    position: absolute;
+    width: 90px; /* Increased size of orbit links */
+    height: 90px; /* Increased size of orbit links */
+    border-radius: 50%;
+    background: linear-gradient(90deg, #1f78d1, #ff6600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem; /* Increased font size */
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Position links to orbit in a circle with more spacing */
+.orbit-link:nth-child(1) { transform: rotate(0deg) translateX(500px) rotate(0deg); }
+.orbit-link:nth-child(2) { transform: rotate(45deg) translateX(500px) rotate(-45deg); }
+.orbit-link:nth-child(3) { transform: rotate(90deg) translateX(500px) rotate(-90deg); }
+.orbit-link:nth-child(4) { transform: rotate(135deg) translateX(500px) rotate(-135deg); }
+.orbit-link:nth-child(5) { transform: rotate(180deg) translateX(500px) rotate(-180deg); }
+.orbit-link:nth-child(6) { transform: rotate(225deg) translateX(500px) rotate(-225deg); }
+.orbit-link:nth-child(7) { transform: rotate(270deg) translateX(500px) rotate(-270deg); }
+.orbit-link:nth-child(8) { transform: rotate(315deg) translateX(500px) rotate(-315deg); }
+
+/* Lock Icon Styling */
+.lock {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 9rem; /* Larger lock size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.left-lock {
+    left: 20px;
+    color: #ff6600; /* Orange color for the left lock */
+}
+
+.right-lock {
+    right: 20px;
+    color: #007bff; /* Blue color for the right lock */
+}
+
+/* Unlock and Wiggling Animation */
+.unlock {
+    color: #28a745;
+    transform: scale(1.2);
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    25% { transform: translateY(-50%) rotate(10deg); }
+    50% { transform: translateY(-50%) rotate(-10deg); }
+    75% { transform: translateY(-50%) rotate(10deg); }
+    100% { transform: translateY(-50%) rotate(0deg); }
+}
+
+@keyframes rotate-orbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

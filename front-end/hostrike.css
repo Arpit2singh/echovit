@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fallback color */
+    background-image: url('vimal-s-cPGMrfAuUSg-unsplash.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #d3c715;
+    margin: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.hostrike-btn {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hostrike-btn:hover {
+    background-color: #218838;
+}
+
+.hostrike-btn:active {
+    background-color: #d7541b;
+    transform: scale(0.98);
+}
+
+/* Option Label Styling */
+li span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hostrike-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+#animated-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffc107;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides the text overflow */
+    border-right: 2px solid #ffc107; /* Adds a blinking cursor */
+    width: fit-content;
+    animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffc107;
+    }
+}

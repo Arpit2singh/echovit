@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <!-- BotUI CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.min.css"
+    />
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <!-- BotUI JS -->
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+  </head>
+  <body>
+    <div id="botui-app"></div>
+
+    <script>
+      var botui = new BotUI("botui-app");
+
+      botui.message
+        .add({
+          content: "Hello! How can I assist you today?",
+        })
+        .then(function () {
+          return botui.action.text({
+            action: {
+              placeholder: "Type your message...",
+            },
+          });
+        })
+        .then(function (res) {
+          botui.message.add({
+            content: "You said: " + res.value,
+          });
+        });
+    </script>
+  </body>
+</html>

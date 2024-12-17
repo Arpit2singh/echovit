@@ -1,0 +1,199 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-btn, .login-btn, .chat-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover, .login-btn:hover, .chat-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero section with color from input image */
+.hero-section {
+    background: linear-gradient(135deg, #f28b2f, #2f80ed);
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.feature  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+}
+
+/* About Us and Testimonial sections with different background color */
+.about-us, .testimonials, .contact-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us h2, .testimonials h2, .contact-us h2 {
+    font-size: 32px;
+    color: #f28b2f;
+    margin-bottom: 20px;
+}
+
+.about-us p, .testimonial p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials {
+    background-color: #f7f7f7; /* New background color */
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Contact section with new background */
+.contact-us {
+    background-color: #f28b2f; /* Add background color */
+    color: #fff;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-us button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer with new gradient background */
+footer {
+    background: linear-gradient(to right, #2f80ed, #f28b2f); /* New gradient */
+    padding: 20px;
+    text-align: center;
+}

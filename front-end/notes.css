@@ -1,0 +1,266 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6b9aff, #ff6b6b);
+    color: #fff;
+}
+
+/* Header */
+.header-containe/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6b9aff, #ff6b6b);
+    color: #fff;
+    
+}
+
+/* Header */
+.header-container {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.top-animation-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+
+#top-animation {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/* Notes Section */
+.notes-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+.download-btn {
+    padding: 10px 15px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#top-animation img {
+    border-radius: 30px; /* Match the parent container */
+}
+.top-animation-container {
+    overflow: hidden;
+}
+background: linear-gradient(135deg, #6b9aff, #ff6b6b);
+@media (max-width: 768px) {
+    .top-animation-container, .notes-container, .upload-container {
+        border-radius: 15px;
+    }
+}
+#top-animation {
+    border-radius: 30px;
+    clip-path: inset(0 round 30px); /* Adds additional clipping */
+}
+
+
+
+.download-btn:hover {
+    background: #ff4040;
+}
+
+/* Upload Section */
+.upload-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#fileInput {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background: #6b9aff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #497edb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+r {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.top-animation-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+
+#top-animation {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/* Notes Section */
+.notes-container, .upload-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+.download-btn, button[type="submit"] {
+    padding: 10px 15px;
+    background: #6b9aff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.download-btn:hover, button[type="submit"]:hover {
+    background: #497edb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    backgrbody {
+        font-family: Arial, sans-serif;
+        background: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1, h2 {
+        text-align: center;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      input, textarea, button {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      
+      button {
+        background: #6b9aff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background: #497edb;
+      }
+      
+      #uploadedFiles a {
+        display: block;
+        margin: 5px 0;
+        color: #6b9aff;
+        text-decoration: none;
+      }
+      
+      #uploadedFiles a:hover {
+        text-decoration: underline;
+      }
+      background: rgba(0, 0, 0, 0.1);
+}
